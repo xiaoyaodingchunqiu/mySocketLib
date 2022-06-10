@@ -1,3 +1,8 @@
+/*
+ * Copyright 2022 ZhangQijun self.
+ * Encapsulate the function of socket programming, for easy use
+ */
+
 #ifndef __TCP_NET_SOCKET_H__
 #define __TCP_NET_SOCKET_H__
 
