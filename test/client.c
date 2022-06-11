@@ -1,3 +1,8 @@
+/*
+ * Copyright 2022 ZhangQijun self.
+ * Encapsulate the function of socket programming, for easy use
+ */
+
 #include "../TcpNetSocket.h"
 
 int main(int argc, char* argv[])
