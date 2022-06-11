@@ -9,6 +9,9 @@ use ag:
 ./client ip port
 
 This only use tcp communication protocol.
+The communication process is as follows:
+server: socket---bind---listen---while(1){---accept---recv---send---close---}---close
+client: socket----------------------------------connect---send---recv-----------close
 
 1.int InitTcp(const char* ip, int port);
 do bind and listen
