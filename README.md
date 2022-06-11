@@ -8,6 +8,8 @@ use ag:
 ./server ip port
 ./client ip port
 
+This only use tcp communication protocol.
+
 1.int InitTcp(const char* ip, int port);
 do bind and listen
 

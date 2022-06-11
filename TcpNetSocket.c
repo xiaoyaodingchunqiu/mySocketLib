@@ -6,6 +6,8 @@
 #include "TcpNetSocket.h"
 
 int InitTcp(const char* ip, int port) {
+    // AF_INET means ipv4, AF_INET6 means ipv6
+    // SOCK_STREAM means tcp, SOCK_DGRAM means udp
     int sfd = socket(AF_INET, SOCK_STREAM, 0);
     if(sfd == -1) {
         perror("socket error");
@@ -23,7 +25,7 @@ int InitTcp(const char* ip, int port) {
         exit(-1);
     }
 
-    if(listen(sfd, 10) == -1) { // 10 is maxnum that can connect
+    if(listen(sfd, MAX_CONNECT_NUM) == -1) {
         perror("listen error");
         close(sfd);
         exit(-1);

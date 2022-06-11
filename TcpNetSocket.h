@@ -16,6 +16,8 @@
 #include <signal.h>
 #include <unistd.h>
 
+#define MAX_CONNECT_NUM 10
+
 int InitTcp(const char* ip, int port);
 int AcceptTcp(int sfd);
 int ConnectTcp(const char* ip, int port);
